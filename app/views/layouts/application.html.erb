@@ -10,6 +10,7 @@
 <h1><%= link_to 'top', root_path %></h1>
 <div>Posts: <%= Post.count %></div>
 <div>Tweet: <%= Tweet.count %></div>
+<div>ENV=<textarea><%= ENV.to_json %></textarea>
 <hr>
 <%= yield %>
 </body>
